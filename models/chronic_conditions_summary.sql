@@ -8,7 +8,7 @@ SELECT
     diagnosis_desc,
     COUNT(DISTINCT patient_id) AS patient_count
 FROM 
-    {{ source('healthcare_data', 'ehr_data_external')}}
+    {{ source('healthcare_data', 'erh_data_external')}}
 WHERE
     diagnosis_code IN ('E11.9', 'I10', 'J45', 'N18.9')
 GROUP BY

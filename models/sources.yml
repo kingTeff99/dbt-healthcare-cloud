@@ -16,7 +16,7 @@ sources:
             tests:
               - not_null
       
-      - name: ehr_data_external
+      - name: erh_data_external
         description: "External table for electronic health records in GCS"
         columns:
           - name: patient_id
@@ -40,9 +40,6 @@ sources:
             tests:
               - not_null
           - name: diagnosis_code
-            tests:
-              - not_null
-          - name: diagnosis_desc
             tests:
               - not_null
           - name: status

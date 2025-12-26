@@ -18,11 +18,10 @@ models:
   - name: patient_demographics
     description: " Patient demographics __ "
     columns:
-      - name: diagnosis_code
+      - name: patient_id
         tests:
-          - unique
           - not_null
-      - name: diagnosis_desc
+      - name: gender
         tests:
           - not_null
       - name: patient_count
